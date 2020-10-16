@@ -94,9 +94,9 @@ export class FormClient extends Component {
               })}
             </div>
           </div>
-          <div className="form-group form-register div-preferences">
-            {/* <div className="div-preferences"> */}
-                <div className="preference">
+          
+          <div className="row">
+                <div className="col-xs-8 col-sm-6">
                   {subCats.map((element,index) => {
                     if(client.preferences.indexOf(element)===-1){
                       return (<button className="btn-preference" key={index} onClick={()=>addPreferences(element)}>{element}</button>);
@@ -108,9 +108,9 @@ export class FormClient extends Component {
                 </div>
                 <input type="text" hidden={changeState} className="form-control input-register" placeholder="nombres" name="name" onChange={(e)=>addPreferenceText(e)} value={newPreference}/>
                 <button type="button" hidden={changeState} onClick={()=>addPreferences(newPreference)}>Agregar</button>
-            {/* </div> */}
           </div>
-
+           <br/>
+           <br/>
           <div className="div-btn btn-dorwn">
               <div className="">
                   <button className="btn btn-danger btn-form" onClick={prevStep}>
