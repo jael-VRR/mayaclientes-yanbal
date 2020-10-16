@@ -24,6 +24,7 @@
     padding: 0.5em;
     box-shadow: 40px; 
     align-items: center;
+    display: flex;
     //height:160px; 
     //border-style: solid;
     //margin-bottom: 1em;
@@ -43,13 +44,12 @@
 }
 
 .icon-social{
-    margin: -70px 230px 
+    margin-left:  230px 
 }
 .icon-social1{
-    margin: 80px 230px 
+    margin-left: 230px 
 
 }
-
 
 .img {
     width: 23%;
