@@ -6,17 +6,7 @@ import React, { useState, useEffect } from 'react';
 
 function Dashboard() {
   
-    const [data, setData] = useState([0]);
-
-    //lectura del json
-    useEffect(() => {
-        fetch('../products.json')
-          .then((response) => response.json())
-          .then((datos) => {
-            setData(datos);
-            console.log(datos);
-          })
-      });
+    
 
     return (
         <>
@@ -57,7 +47,7 @@ function Dashboard() {
                     </div>
                    <div>
                       <a className=" icon-social" href="https://wa.me/51992781141/?text=%C2%A1Hola%0A%0Ahola%0A%0A" ><img src={whatsapp} /></a>
-                      <a href="tel:+910469991" className="icon-social1"><img src={llamada} /></a>
+                      <a href="tel:910469991" className="icon-social1"><img src={llamada} /></a>
                    </div>
                     
      

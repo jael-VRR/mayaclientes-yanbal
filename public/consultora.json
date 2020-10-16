@@ -1,0 +1,27 @@
+[
+    {
+      "client": "Natalia Gordillo",
+      "monto": 180,
+      "total": 138,
+
+      "products": [
+        {
+          "img": "favicon.ico",
+          "sap": 20011527
+         
+       
+        },
+        {
+          "img": "logo192.png",
+          "sap": 20011528
+        
+        },
+        {
+          "img": "logo512.png",
+          "sap": 20011870
+         
+        }
+      ] 
+    
+    }
+]

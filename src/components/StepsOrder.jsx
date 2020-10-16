@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component ,useState,useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import btnBack from '../images/btn_back.png';
 import btnNext from '../images/btn_next.png';
@@ -9,6 +9,7 @@ import llamada from '../images/llamada.png';
 
 export class StepsOrder extends Component {
   render() {
+   
     const { inputChange, nextStep, prevStep, step,onChange,Order} = this.props;
     return (
       <>
@@ -194,6 +195,42 @@ export class StepsOrder extends Component {
                 <br/>
             
            </div>
+           <p className="text-center">Cliente</p>
+           <div className="form-group form-register">
+            <input type="email" className="form-control input-register" placeholder="Natalia Gordillo" name="email" onChange={inputChange('email')} />
+          </div>
+          <div>
+          <div className="list-group">
+ 
+  <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
+    <div className="d-flex w-100 justify-content-between">
+    <small className="text-muted">1</small>
+    <img src="" alt=""/>
+      <p className="mb-1">Elixir de ojos</p>
+    </div>
+ 
+  </a>
+  <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
+    <div className="d-flex w-100 justify-content-between">
+    <small className="text-muted">2</small>
+    <img src="" alt=""/>
+    <p className="mb-1">Total block</p>
+    </div>
+  </a>
+  <a href="#" className="list-group-item list-group-item-action flex-column align-items-start">
+    <div className="d-flex w-100 justify-content-between">
+    
+    <small className="text-muted">3</small>
+    <img src="" alt=""/>
+    <p className="mb-1">Ccori</p>
+    </div>
+  </a>
+  <div>
+    <a><p>Monto de pedido</p><p>S/170.00</p></a>
+    <p>Monto a cobrar</p>S/138.00<p></p>
+  </div>
+</div>
+          </div>
            
           <div className="div-btn btn-dorwn">
             <div className="">
